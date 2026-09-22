@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="320.0" prefWidth="400.0" spacing="12.0" style="-fx-background-color: #353437;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProdutoController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Nome do Produto" textFill="WHITE" />
+      <TextField fx:id="campoNome" promptText="Ex: Teclado Mecânico" />
+      <Label text="Preço Unitário" textFill="WHITE" />
+      <TextField fx:id="campoPreco" promptText="Ex: 250.00" />
+      <Label text="Quantidade em Estoque" textFill="WHITE" />
+      <TextField fx:id="campoEstoque" promptText="Ex: 15" />
+      <HBox alignment="CENTER_RIGHT" spacing="10.0" translateX="12.0" translateY="40.0" VBox.vgrow="NEVER">
+         <children>
+            <Button fx:id="botaoSalvar" onAction="#aoSalvar" scaleX="1.1" scaleY="1.1" text="Salvar" translateX="-5.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
