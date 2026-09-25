@@ -6,7 +6,7 @@ public class ConnectionFactory {
     // Constantes com as credenciais centralizadas do PostgreSQL
     private static final String URL = "jdbc:postgresql://localhost:5432/sistema_vendas";
     private static final String USUARIO = "postgres";
-    private static final String SENHA = "minha_senha";
+    private static final String SENHA = "240322";
 
     // Atributo estático que armazenará a única instância da fábrica
     private static ConnectionFactory instancia;
